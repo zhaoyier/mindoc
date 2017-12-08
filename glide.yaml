@@ -1,4 +1,4 @@
-package: github.com/lifei6671/mindoc
+package: edroity.com/tool/mindoc
 import:
 - package: github.com/astaxie/beego
   version: ^1.8.3
@@ -36,7 +36,7 @@ import:
   subpackages:
   - raster
   - truetype
-- package: github.com/lifei6671/gocaptcha
+- package: edroity.com/tool/gocaptcha
   version: b244e66362327cfd7d47c1a75eb1ca3845ffc52a
 - package: github.com/mattn/go-sqlite3
   version: 467f50b0c026317ad28fc2c0a08aab6f755cfc7a

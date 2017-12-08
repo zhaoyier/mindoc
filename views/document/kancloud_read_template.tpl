@@ -89,7 +89,7 @@
                         <p>SmartWiki是一款针对IT团队开发的简单好用的文档管理系统。
                             可以用来储存日常接口文档，数据库字典，手册说明等文档。内置项目管理，用户管理，权限管理等功能，能够满足大部分中小团队的文档管理需求。</p>
                         <h2 id="h2-u4f7fu7528"><a name="使用" class="reference-link"></a><span class="header-link octicon octicon-link"></span>使用</h2>
-                        <pre><code>git clone https://github.com/lifei6671/SmartWiki.git
+                        <pre><code>git clone https://edroity.com/tool/SmartWiki.git
 </code></pre>
                         <p>配置laravel的运行环境,然后打开首页会自动跳转到安装页面。</p>
                         <p>因为laravel使用了composer，所以需要服务器安装composer进行包的还原。</p>

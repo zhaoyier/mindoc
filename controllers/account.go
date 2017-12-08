@@ -6,13 +6,13 @@ import (
 	"regexp"
 
 	"net/smtp"
-	"github.com/lifei6671/mindoc/conf"
-	"github.com/lifei6671/mindoc/models"
-	"github.com/lifei6671/mindoc/utils"
+	"edroity.com/tool/mindoc/conf"
+	"edroity.com/tool/mindoc/models"
+	"edroity.com/tool/mindoc/utils"
 	"github.com/astaxie/beego"
 	"github.com/astaxie/beego/logs"
-	"github.com/lifei6671/gocaptcha"
 	"strconv"
+	"github.com/lifei6671/gocaptcha"
 )
 
 // AccountController 用户登录与注册.

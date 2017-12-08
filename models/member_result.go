@@ -3,7 +3,7 @@ package models
 import (
 	"time"
 	"github.com/astaxie/beego/orm"
-	"github.com/lifei6671/mindoc/conf"
+	"edroity.com/tool/mindoc/conf"
 )
 
 type MemberRelationshipResult struct {

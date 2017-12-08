@@ -21,12 +21,13 @@ import (
 	"github.com/astaxie/beego/orm"
 	"github.com/boombuler/barcode"
 	"github.com/boombuler/barcode/qr"
-	"github.com/lifei6671/mindoc/commands"
-	"github.com/lifei6671/mindoc/conf"
-	"github.com/lifei6671/mindoc/models"
-	"github.com/lifei6671/mindoc/utils"
-	"github.com/lifei6671/mindoc/utils/wkhtmltopdf"
+	"edroity.com/tool/mindoc/commands"
+	"edroity.com/tool/mindoc/conf"
+	"edroity.com/tool/mindoc/models"
+	"edroity.com/tool/mindoc/utils"
+	"edroity.com/tool/mindoc/utils/wkhtmltopdf"
 	"github.com/russross/blackfriday"
+	"fmt"
 )
 
 //DocumentController struct.
@@ -133,6 +134,8 @@ func (c *DocumentController) Read() {
 	identify := c.Ctx.Input.Param(":key")
 	token := c.GetString("token")
 	id := c.GetString(":id")
+
+	fmt.Println("=======>>>>1011:", identify, id)
 
 	if identify == "" || id == "" {
 		c.Abort("404")
@@ -741,6 +744,7 @@ func (c *DocumentController) Export() {
 	c.TplName = "document/export.tpl"
 
 	identify := c.Ctx.Input.Param(":key")
+	fmt.Println("======>>>>001:", c.Ctx.Request.URL)
 
 	output := c.GetString("output")
 
@@ -1187,4 +1191,13 @@ func RecursiveFun(parent_id int, prefix, dpath string, c *DocumentController, bo
 			}
 		}
 	}
+}
+
+
+func getCurrentDirectory() string {
+	dir, err := filepath.Abs(filepath.Dir(os.Args[0]))
+	if err != nil {
+		//log.Fatal(err)
+	}
+	return strings.Replace(dir, "\\", "/", -1)
 }

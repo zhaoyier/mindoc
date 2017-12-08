@@ -1,11 +1,11 @@
 package controllers
 
 import (
-	"github.com/lifei6671/mindoc/models"
+	"edroity.com/tool/mindoc/models"
 	"github.com/astaxie/beego/orm"
 	"github.com/astaxie/beego"
-	"github.com/lifei6671/mindoc/conf"
-	"github.com/lifei6671/mindoc/utils"
+	"edroity.com/tool/mindoc/conf"
+	"edroity.com/tool/mindoc/utils"
 	"math"
 )
 

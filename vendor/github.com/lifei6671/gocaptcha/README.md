@@ -17,7 +17,7 @@
 ####使用：
 
 ```
-	go get github.com/lifei6671/gocaptcha/
+	go get edroity.com/tool/gocaptcha/
 ```
 
 ####使用的类库

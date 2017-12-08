@@ -3,10 +3,10 @@ FROM golang:1.8.3-alpine3.6
 
 RUN apk add --update bash git make gcc g++
 
-ADD . /go/src/github.com/lifei6671/mindoc
+ADD . /go/src/edroity.com/tool/mindoc
 
 
-WORKDIR /go/src/github.com/lifei6671/mindoc
+WORKDIR /go/src/edroity.com/tool/mindoc
 
 RUN chmod +x start.sh
 
